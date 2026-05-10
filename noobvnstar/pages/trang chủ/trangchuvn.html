@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NoobVNstar.dev | Thân Văn Hoàng Phương Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#773215",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e6e8ea",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-highest": "#e0e3e5",
+                        "background": "#f7f9fb",
+                        "surface-tint": "#006a61",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#005049",
+                        "secondary": "#545f73",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-container": "#586377",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#6bd8cb",
+                        "outline-variant": "#bcc9c6",
+                        "surface-dim": "#d8dadc",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "on-tertiary-fixed": "#370e00",
+                        "on-secondary-fixed": "#111c2d",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#f4fffc",
+                        "on-primary-fixed": "#00201d",
+                        "on-background": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface-variant": "#3d4947",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "secondary-fixed": "#d8e3fb",
+                        "error": "#ba1a1a",
+                        "primary": "#00685f",
+                        "tertiary-container": "#b05e3d",
+                        "surface": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed": "#89f5e7",
+                        "primary-container": "#008378",
+                        "surface-container": "#eceef0",
+                        "on-error": "#ffffff",
+                        "outline": "#6d7a77",
+                        "on-tertiary-container": "#fffbff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdbce",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "secondary-container": "#d5e0f8",
+                        "tertiary": "#924628"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "element-gap": "24px",
+                        "container-max": "1120px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-surface-container-highest border-b border-outline-variant dark:border-outline h-16">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant">
+        <div class="max-w-container-max mx-auto flex justify-between items-center px-margin-mobile md:px-gutter h-16">
+            <div class="font-headline-md text-headline-md font-bold text-on-surface">NoobVNstar.dev</div>
+
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a href="trangchuvn.html" class="font-body-md text-primary font-bold border-b-2 border-primary h-full flex items-center">Trang chủ</a>
+
+                <a href="../kinh%20nghiệm/kinhnghiemVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Kinh nghiệm</a>
+                <a href="../kĩ%20năng/kinangVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Kỹ năng</a>
+                <a href="../dự%20án/duanVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Dự án</a>
+                <a href="../lien%20he/lienheVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Liên hệ</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-3 font-label-sm text-label-sm">
+                <a href="trangchuEN.html" class="text-secondary hover:text-primary cursor-pointer transition-colors">EN</a>
+                <span class="text-outline-variant opacity-40">|</span>
+                <span class="text-primary font-bold cursor-default">VN</span>
+            </div>
+            <a href="../../CV.rar"
+               download
+               class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm scale-95 active:scale-90 transition-transform inline-flex items-center justify-center">
+                Download CV
+            </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap overflow-hidden relative">
+<div class="grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 space-y-element-gap">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+                        Sẵn sàng cho các thử thách mới
+                    </div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface">
+                        Thân Văn Hoàng Phương <br/>
+<span class="text-primary">Lập trình viên Fullstack.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Chuyên gia trong việc xây dựng các giải pháp web có khả năng mở rộng cao, tập trung vào code chất lượng và kiến trúc hệ thống hiện đại.
+                    </p>
+<div class="flex gap-4">
+<a href="../dự%20án/duanVN.html"class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-sm text-label-sm font-bold transition-all hover:shadow-lg">
+                            Xem Dự Án
+                        </a>
+<a href="../lien%20he/lienheVN.html" class="border border-outline text-on-surface px-8 py-3 rounded-lg font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-all">
+                            Liên Hệ Ngay
+                        </a>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-square bg-surface-container-highest rounded-xl overflow-hidden shadow-sm border border-outline-variant">
+<img alt="Thân Văn Hoàng Phương" class="w-full h-full object-cover" data-alt="Portrait of Thân Văn Hoàng Phương." src="https://lh3.googleusercontent.com/aida/ADBb0ujdOpwgzSYoW52ZUY5uG6UqgDmsjLC60M5A1dkywWl87rLluVuVXYddGoczrSX5P3_wzGrX77Zcn3fZRPBM3eCT-Fz0KlSw0m1V-JvJhxAdftuSGQmYmyqObh-nJZjrrFoiXJAv5ri-9wb8K532SQU_jkdZkuqFg7i3kTeiHTgL8-KhynIAZeC0wxwfz9AwxBko9tXw29_y_QQCrW9XmvB6jH0SGXOt0-4ofiR5SSHFG83x6QOK5rdCNETzBRo3qvb1bL6cRNV7DrQ"/>
+</div>
+<!-- Stats Floating Card -->
+<div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-lg border border-outline-variant shadow-lg flex gap-8">
+<div>
+<div class="font-headline-md text-headline-md text-primary">5+</div>
+<div class="font-label-sm text-label-sm text-secondary">Năm Kinh Nghiệm</div>
+</div>
+<div class="border-l border-outline-variant pl-8">
+<div class="font-headline-md text-headline-md text-primary">40+</div>
+<div class="font-label-sm text-label-sm text-secondary">Dự Án Hoàn Thành</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Objective & Tech Stack (Bento Grid Style) -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid md:grid-cols-3 gap-gutter">
+<!-- Career Objective -->
+<div class="md:col-span-2 bg-surface p-10 rounded-xl border border-outline-variant flex flex-col justify-between">
+<div>
+<div class="text-primary font-label-sm text-label-sm mb-4">MỤC TIÊU NGHỀ NGHIỆP</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Xây dựng giải pháp web có khả năng mở rộng.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                                Tôi định hướng phát triển sự nghiệp xoay quanh việc tối ưu hóa hiệu năng hệ thống và xây dựng kiến trúc phần mềm bền vững. Với kinh nghiệm thực chiến, tôi luôn ưu tiên các giải pháp giúp doanh nghiệp thích ứng nhanh với sự tăng trưởng về lượng người dùng.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-surface-container-high px-4 py-2 rounded-full font-label-sm text-label-sm">Scalable Infrastructure</span>
+<span class="bg-surface-container-high px-4 py-2 rounded-full font-label-sm text-label-sm">High Performance</span>
+<span class="bg-surface-container-high px-4 py-2 rounded-full font-label-sm text-label-sm">Enterprise Architecture</span>
+</div>
+</div>
+<!-- Key Skills -->
+<div class="bg-primary text-on-primary p-10 rounded-xl flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-8">Kỹ năng then chốt</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined">architecture</span>
+<div>
+<div class="font-bold">Clear Architecture</div>
+<div class="text-on-primary/80 text-label-sm">Tách biệt logic và giao diện</div>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined">database</span>
+<div>
+<div class="font-bold">Mở rộng Database</div>
+<div class="text-on-primary/80 text-label-sm">Tối ưu truy vấn &amp; Sharding</div>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined">code</span>
+<div>
+<div class="font-bold">React &amp; Node.js</div>
+<div class="text-on-primary/80 text-label-sm">Fullstack Mastery</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Visualization -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-headline-lg text-headline-lg mb-gutter">Năng lực chuyên môn</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="p-6 bg-surface border border-outline-variant rounded-xl hover:shadow-md transition-all">
+<div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">developer_board</span></div>
+<div class="font-headline-md text-headline-md mb-2">Frontend</div>
+<p class="text-on-surface-variant font-label-sm text-label-sm">React, Next.js, Tailwind, TypeScript</p>
+</div>
+<div class="p-6 bg-surface border border-outline-variant rounded-xl hover:shadow-md transition-all">
+<div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">dns</span></div>
+<div class="font-headline-md text-headline-md mb-2">Backend</div>
+<p class="text-on-surface-variant font-label-sm text-label-sm">Node.js, Express, NestJS, Go</p>
+</div>
+<div class="p-6 bg-surface border border-outline-variant rounded-xl hover:shadow-md transition-all">
+<div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">storage</span></div>
+<div class="font-headline-md text-headline-md mb-2">Database</div>
+<p class="text-on-surface-variant font-label-sm text-label-sm">PostgreSQL, MongoDB, Redis, MySQL</p>
+</div>
+<div class="p-6 bg-surface border border-outline-variant rounded-xl hover:shadow-md transition-all">
+<div class="text-primary mb-4"><span class="material-symbols-outlined text-4xl">cloud_done</span></div>
+<div class="font-headline-md text-headline-md mb-2">DevOps</div>
+<p class="text-on-surface-variant font-label-sm text-label-sm">Docker, Kubernetes, AWS, CI/CD</p>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-headline-lg text-headline-lg mb-gutter">Kinh nghiệm làm việc</h2>
+<div class="relative border-l-2 border-outline-variant ml-4 space-y-section-gap py-8">
+<!-- Entry 1 -->
+<div class="relative pl-12">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-primary-fixed"></div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2">2021 - Hiện tại</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Senior Fullstack Developer</h3>
+<div class="text-primary font-bold mb-4">TechVision Global</div>
+<ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-2 max-w-2xl">
+<li>Xây dựng kiến trúc Microservices cho nền tảng thương mại điện tử với hơn 1 triệu người dùng hàng tháng.</li>
+<li>Tối ưu hóa Database giúp giảm 40% thời gian phản hồi của API.</li>
+<li>Dẫn dắt đội ngũ 5 lập trình viên frontend triển khai Design System mới dựa trên React.</li>
+</ul>
+</div>
+<!-- Entry 2 -->
+<div class="relative pl-12">
+<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-outline"></div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2">2019 - 2021</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Backend Engineer</h3>
+<div class="text-primary font-bold mb-4">SwiftSoft Solutions</div>
+<ul class="font-body-md text-body-md text-on-surface-variant list-disc pl-5 space-y-2 max-w-2xl">
+<li>Phát triển hệ thống quản lý kho vận bằng Node.js và PostgreSQL.</li>
+<li>Tích hợp các cổng thanh toán quốc tế (Stripe, PayPal).</li>
+<li>Cải thiện quy trình CI/CD giúp rút ngắn thời gian deploy từ 30 phút xuống 5 phút.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="bg-surface-container p-8 md:p-16 rounded-xl overflow-hidden relative">
+<div class="grid md:grid-cols-2 gap-gutter relative z-10">
+<div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6">Liên hệ hợp tác</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12">
+                            Bạn có dự án thú vị hay một lời mời hợp tác? Đừng ngần ngại để lại lời nhắn, tôi sẽ phản hồi sớm nhất có thể.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-label-sm text-label-sm">contact@noobvnstar.dev</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-label-sm text-label-sm">TP. Hồ Chí Minh, Việt Nam</span>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Họ và tên</label>
+<input class="w-full bg-surface border border-outline rounded-lg px-4 py-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Email</label>
+<input class="w-full bg-surface border border-outline rounded-lg px-4 py-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Tin nhắn</label>
+<textarea class="w-full bg-surface border border-outline rounded-lg px-4 py-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:bg-primary-container transition-all">Gửi yêu cầu</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-element-gap px-margin-mobile flex flex-col items-center justify-center text-center gap-4 bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant dark:border-outline">
+<div class="font-headline-md text-headline-md text-on-surface">NoobVNstar.dev</div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors font-label-sm text-label-sm opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors font-label-sm text-label-sm opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors font-label-sm text-label-sm opacity-80 hover:opacity-100" href="#">Email</a>
+</div>
+<div class="max-w-2xl mx-auto space-y-2">
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant">
+                © 2024 Thân Văn Hoàng Phương (NoobVNstar.dev).
+            </p>
+<p class="font-label-sm text-label-sm text-primary font-medium">
+                Đây là bài tập chỉ mang tính chất tham khảo
+            </p>
+</div>
+</footer>
+</body></html>

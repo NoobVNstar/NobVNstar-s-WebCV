@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#773215",
+                    "surface-bright": "#f7f9fb",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e6e8ea",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-container-highest": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "surface-tint": "#006a61",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#005049",
+                    "secondary": "#545f73",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary-container": "#586377",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#6bd8cb",
+                    "outline-variant": "#bcc9c6",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-tertiary-fixed": "#370e00",
+                    "on-secondary-fixed": "#111c2d",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#f4fffc",
+                    "on-primary-fixed": "#00201d",
+                    "on-background": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "on-surface-variant": "#3d4947",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed-dim": "#bcc7de",
+                    "secondary-fixed": "#d8e3fb",
+                    "error": "#ba1a1a",
+                    "primary": "#00685f",
+                    "tertiary-container": "#b05e3d",
+                    "surface": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed": "#89f5e7",
+                    "primary-container": "#008378",
+                    "surface-container": "#eceef0",
+                    "on-error": "#ffffff",
+                    "outline": "#6d7a77",
+                    "on-tertiary-container": "#fffbff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffdbce",
+                    "primary-fixed-dim": "#6bd8cb",
+                    "secondary-container": "#d5e0f8",
+                    "tertiary": "#924628"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "margin-mobile": "20px",
+                    "element-gap": "24px",
+                    "container-max": "1120px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-surface-container-highest border-b border-outline-variant dark:border-outline h-16">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant">
+        <div class="max-w-container-max mx-auto flex justify-between items-center px-margin-mobile md:px-gutter h-16">
+            <div class="font-headline-md text-headline-md font-bold text-on-surface">NoobVNstar.dev</div>
+
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a href="../trang%20chủ/trangchuvn.html" class="font-body-md text-secondary hover:text-primary transition-colors">Trang chủ</a>
+
+                <a href="../kinh%20nghiệm/kinhnghiemVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Kinh nghiệm</a>
+
+                <a href="kinangVN.html" class="font-body-md text-primary font-bold border-b-2 border-primary h-full flex items-center">Kỹ năng</a>
+
+                <a href="../dự%20án/duanVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Dự án</a>
+
+                <a href="../lien%20he/lienheVN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Liên hệ</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-3 font-label-sm text-label-sm">
+                <a href="kinangEN.html" class="text-secondary hover:text-primary cursor-pointer transition-colors">EN</a>
+                <span class="text-outline-variant opacity-40">|</span>
+                <span class="text-primary font-bold cursor-default">VN</span>
+            </div>
+            <a href="../../CV.rar"
+               download
+               class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm scale-95 active:scale-90 transition-transform inline-flex items-center justify-center">
+                Download CV
+            </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="pt-32 pb-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Header Section -->
+<header class="mb-element-gap">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Technical Competencies</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface max-w-2xl">
+                Kỹ năng &amp; Chuyên môn Công nghệ
+            </h1>
+<p class="mt-6 font-body-lg text-body-lg text-secondary max-w-xl">
+                Hệ thống kỹ năng được xây dựng dựa trên tư duy lập trình hiện đại, tập trung vào hiệu suất, khả năng mở rộng và chất lượng mã nguồn bền vững.
+            </p>
+</header>
+<!-- Bento Grid Skills Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mt-16">
+<!-- Professional Skills (Primary) -->
+<div class="md:col-span-8 bg-surface-container-low border border-outline-variant p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Kỹ năng chuyên môn</h3>
+<p class="font-label-sm text-label-sm text-secondary">Core Engineering &amp; Frameworks</p>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl">code</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+<div class="flex flex-col items-center gap-3 p-4 bg-white rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-3xl text-primary">javascript</span>
+<span class="font-label-sm text-label-sm">React</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 bg-white rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-3xl text-primary">javascript</span>
+<span class="font-label-sm text-label-sm">TypeScript</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 bg-white rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-3xl text-primary">javascript</span>
+<span class="font-label-sm text-label-sm">Node.js</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 bg-white rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-3xl text-primary">frame_source</span>
+<span class="font-label-sm text-label-sm">Next.js</span>
+</div>
+</div>
+</div>
+<!-- Language Section -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container p-8 rounded-xl flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Ngôn ngữ</h3>
+<p class="font-label-sm text-label-sm opacity-90">Communication</p>
+</div>
+<div class="mt-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-3xl">language</span>
+<span class="font-body-lg text-body-lg font-bold">Tiếng Việt</span>
+</div>
+<div class="w-full bg-white/20 h-1 rounded-full">
+<div class="bg-white h-full w-full rounded-full"></div>
+</div>
+<p class="mt-2 font-label-sm text-label-sm opacity-80 text-right">Bản ngữ (Native)</p>
+</div>
+</div>
+<!-- Architecture & Systems -->
+<div class="md:col-span-7 bg-surface-container-low border border-outline-variant p-8 rounded-xl">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-tertiary">architecture</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Kiến trúc &amp; Hệ thống</h3>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant pb-4">
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Clear Architecture</p>
+<p class="font-label-sm text-label-sm text-secondary">Clean code, SOLID, Domain Driven Design</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Advanced</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant pb-4">
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Database Scaling</p>
+<p class="font-label-sm text-label-sm text-secondary">Optimization, Indexing, Sharding</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Intermediate</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Microservices</p>
+<p class="font-label-sm text-label-sm text-secondary">Distributed Systems, API Gateway, Event Bus</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Expert</span>
+</div>
+</div>
+</div>
+<!-- Tools & Infrastructure -->
+<div class="md:col-span-5 bg-white border border-outline-variant p-8 rounded-xl flex flex-col gap-6">
+<h3 class="font-headline-md text-headline-md text-on-surface">Công cụ</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">box</span> Docker
+                    </div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">cloud</span> AWS
+                    </div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">account_tree</span> Git
+                    </div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">terminal</span> CI/CD
+                    </div>
+</div>
+<div class="mt-auto relative w-full h-40 overflow-hidden rounded-lg">
+<img alt="Profile Image" class="w-full h-full object-cover" style="object-position: 50% 20%;"data-alt="A cinematic, high-detail photograph of a professional developer workspace in a minimalist setting. The scene features a sleek mechanical keyboard, a large ultra-wide monitor displaying clean lines of code in a dark-themed IDE, and a subtle warm light emanating from a desk lamp. The overall atmosphere is focused and professional, using a refined palette of deep grays, whites, and soft teals to match the modern corporate aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0ujdOpwgzSYoW52ZUY5uG6UqgDmsjLC60M5A1dkywWl87rLluVuVXYddGoczrSX5P3_wzGrX77Zcn3fZRPBM3eCT-Fz0KlSw0m1V-JvJhxAdftuSGQmYmyqObh-nJZjrrFoiXJAv5ri-9wb8K532SQU_jkdZkuqFg7i3kTeiHTgL8-KhynIAZeC0wxwfz9AwxBko9tXw29_y_QQCrW9XmvB6jH0SGXOt0-4ofiR5SSHFG83x6QOK5rdCNETzBRo3qvb1bL6cRNV7DrQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Quote/Footer Note -->
+<div class="mt-section-gap text-center max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-4xl text-outline-variant mb-4">format_quote</span>
+<p class="font-body-lg text-body-lg italic text-secondary mb-8">
+                "Tôi tin rằng công nghệ chỉ thực sự mạnh mẽ khi nó được xây dựng trên một nền tảng kiến trúc vững chắc và khả năng duy trì mã nguồn tốt."
+            </p>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-element-gap px-margin-mobile flex flex-col items-center justify-center text-center gap-4 bg-surface-container-low border-t border-outline-variant">
+<div class="font-headline-md text-headline-md text-on-surface font-bold">NoobVNstar.dev</div>
+<div class="flex gap-6 mb-2">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">GitHub</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Email</a>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant max-w-lg">
+            © 2024 Thân Văn Hoàng Phương (NoobVNstar.dev). Đây là bài tập chỉ mang tính chất tham khảo
+        </p>
+</footer>
+</body></html>

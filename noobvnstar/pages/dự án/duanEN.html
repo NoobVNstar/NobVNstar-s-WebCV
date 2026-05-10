@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#006a61",
+                        "on-surface-variant": "#3d4947",
+                        "on-primary": "#ffffff",
+                        "primary": "#00685f",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "tertiary-fixed": "#ffdbce",
+                        "tertiary-container": "#b05e3d",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-container": "#d5e0f8",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "background": "#f7f9fb",
+                        "on-secondary-container": "#586377",
+                        "outline": "#6d7a77",
+                        "secondary": "#545f73",
+                        "on-tertiary-fixed-variant": "#773215",
+                        "tertiary": "#924628",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container": "#eceef0",
+                        "on-primary-fixed": "#00201d",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "inverse-primary": "#6bd8cb",
+                        "on-tertiary-container": "#fffbff",
+                        "on-surface": "#191c1e",
+                        "surface": "#f7f9fb",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#005049",
+                        "on-tertiary-fixed": "#370e00",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#008378",
+                        "outline-variant": "#bcc9c6",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#89f5e7",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#f4fffc",
+                        "secondary-fixed": "#d8e3fb",
+                        "on-secondary-fixed": "#111c2d",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-low": "#f2f4f6",
+                        "on-background": "#191c1e",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-variant": "#e0e3e5",
+                        "surface-bright": "#f7f9fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "element-gap": "24px",
+                        "gutter": "32px",
+                        "container-max": "1120px"
+                    },
+                    "fontFamily": {
+                        "headline-xl-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-16 bg-surface dark:bg-surface-container-highest border-b border-outline-variant dark:border-outline">
+<div class="flex items-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface-variant">NoobVNstar.dev</span>
+</div>
+<div class="hidden md:flex gap-8 items-center h-full">
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Experience</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Skills</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed font-bold border-b-2 border-primary" href="#">Projects</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label-sm text-label-sm text-primary">EN | VN</span>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-sm text-label-sm rounded-lg scale-95 active:scale-90 transition-transform">Download CV</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<!-- Header Section --><header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-surface-container-highest border-b border-outline-variant dark:border-outline h-16">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant">
+        <div class="max-w-container-max mx-auto flex justify-between items-center px-margin-mobile md:px-gutter h-16">
+            <div class="font-headline-md text-headline-md font-bold text-on-surface">NoobVNstar.dev</div>
+
+
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a href="../trang%20chủ/trangchuEN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Home</a>
+
+                <a href="../kinh%20nghiệm/kinhnghiemEN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Experience</a>
+
+                <a href="../kĩ%20năng/kinangEN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Skills</a>
+
+                <a href="duanEN.html" class="font-body-md text-primary font-bold border-b-2 border-primary h-full flex items-center">Projects</a>
+
+                <a href="../lien%20he/lienheEN.html" class="font-body-md text-secondary hover:text-primary transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-3 font-label-sm text-label-sm">
+                <span class="text-primary font-bold cursor-default">EN</span>
+                <span class="text-outline-variant opacity-40">|</span>
+                <a href="duanVN.html" class="text-secondary hover:text-primary cursor-pointer transition-colors">VN</a>
+            </div>
+            <a href="../../CV.rar"
+               download
+               class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm scale-95 active:scale-90 transition-transform inline-flex items-center justify-center">
+                Download CV
+            </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project 1: AI Chatbot -->
+<div class="group flex flex-col bg-surface border border-outline-variant hover:shadow-[0_10px_25px_-5px_rgba(15,23,42,0.05)] transition-all duration-300 p-8 rounded-lg">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video bg-surface-container">
+<img alt="AI Chatbot Visual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated digital interface displaying complex neural network nodes and glowing data streams in a minimalist dark theme. The composition is balanced with sharp focus on the central AI core, utilizing a professional color palette of deep teal and clean white accents. Soft volumetric lighting enhances the technological and futuristic mood of the intelligent system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSWEQ9rh2UKueMMOet3rnkoI1G5FItnHuNxTb84NfGoFKKEUesMcwjZIMmDVqbak6ycr8dQA8AKnN6TOY3AoUDYX3v7eo80uRX4bOc4SKixRNEMI1hH_WeUrOIJaLWgYJjofN3TzAAHNbLUIgfQkuET8mRyrqBTmfRZMt6ig4xxO0W2FbvxYBvhozgfqY0KVL5msfR8B3vI0yHgitg2ccIBXBl0iBvNdo-Vk5VDvcC2Va9vzHAbcGRG5FiqjLaRseU4Ge_3dwJsZM-"/>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">Python</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">OpenAI API</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">Vector DB</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">AI Chatbot: Intelligent Support System</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">A high-performance conversational agent leveraging large language models and vector search for precise retrieval-augmented generation in customer support contexts.</p>
+<div class="flex gap-6 mt-auto">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors" href="../../CV.rar">
+                        View Demo <span class="material-symbols-outlined text-sm" data-icon="arrow_outward">arrow_outward</span>
+</a>
+    <a href="https://github.com" target="_blank" class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors">
+        Source Code (GitHub) <span class="material-symbols-outlined text-sm">code</span>
+    </a>
+</div>
+</div>
+<!-- Project 2: E-commerce -->
+<div class="group flex flex-col bg-surface border border-outline-variant hover:shadow-[0_10px_25px_-5px_rgba(15,23,42,0.05)] transition-all duration-300 p-8 rounded-lg">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video bg-surface-container">
+<img alt="E-commerce Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean and modern e-commerce dashboard featuring minimalist product grids and sleek analytical charts. The interface uses a crisp white background with subtle gray borders and primary teal highlights. High-key lighting creates a professional and accessible atmosphere, emphasizing clarity and efficient user flow for multi-channel sales management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOdSbPa_K0lsrZKaqkAygNZW0IUi48sbuYEi9wua0v9w12lpQnWYceX0C8abAVPRMliDfmBs329Wko-fTRbztZDex2hAb3jnl7MfcDDh0QpBWHnWdRu2a1oEaE2ngyocrG7GlFZaLyCUfrSK3LRH8HVKsO_ohB1wUvMpDv4dcEJg8iMonFUL1XxXWCxGeRvswAmhmc7L43VbZmpLIyKxNXerH8TmFDCnjMxpNPlPNhodPLAdqk2HDC21Ge8QX9i0uBVhlYVGmZof1z"/>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">React</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">Node.js</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">E-commerce: Multi-channel Platform</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Comprehensive retail solution with real-time inventory synchronization across multiple marketplaces and a headless frontend architecture.</p>
+<div class="flex gap-6 mt-auto">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors" href="../../CV.rar">
+                        View Demo <span class="material-symbols-outlined text-sm" data-icon="arrow_outward">arrow_outward</span>
+</a>
+    <a href="https://github.com" target="_blank" class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors">
+        Source Code <span class="material-symbols-outlined text-sm">code</span>
+    </a>
+</div>
+</div>
+<!-- Project 3: Cloud Computing -->
+<div class="group flex flex-col bg-surface border border-outline-variant hover:shadow-[0_10px_25px_-5px_rgba(15,23,42,0.05)] transition-all duration-300 p-8 rounded-lg">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video bg-surface-container">
+<img alt="Cloud Infrastructure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A conceptual representation of cloud infrastructure showing interconnected nodes and server architecture in a vast digital space. The visual style is minimalist and precise, using a cool color palette of whites and soft blues with glowing data pulses. The mood is highly professional and authoritative, suggesting a robust and scalable technical environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ7KjHQhoyLIH31d3RSbjGX-6pW_N3hQJopVatzq5aIkZnPYjwc8lNDQeVj7hiqw1Kq0DnMt9LqvcT318ZrreqjyE2YxlSRSX_AurPnDNb8q_W70boN1Ucdf9qCAExHKRrFBAmeG4eOIUZR2QiaiyD7e1Hn9MNIZbm3v4C-60GxRvaV5YRMxPDxnWsf9vuFhb8FKimJtVm48eU4gX0HWmi-d6eEHbSKBxgsGdK6o1HiihrVbAqZZqz8ZcOs9FKb1pHyjO59i99UFCo"/>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">AWS</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">Docker</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Cloud Computing: Scalable Infrastructure</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Enterprise-grade deployment pipeline featuring auto-scaling groups, container orchestration, and multi-region disaster recovery protocols.</p>
+<div class="flex gap-6 mt-auto">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors" href="../../CV.rar">
+                        View Case Study <span class="material-symbols-outlined text-sm" data-icon="arrow_outward">arrow_outward</span>
+</a>
+    <a href="https://github.com" target="_blank" class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors">
+        Config Repo <span class="material-symbols-outlined text-sm">terminal</span>
+    </a>
+</div>
+</div>
+<!-- Project 4: Data Analytics -->
+<div class="group flex flex-col bg-surface border border-outline-variant hover:shadow-[0_10px_25px_-5px_rgba(15,23,42,0.05)] transition-all duration-300 p-8 rounded-lg">
+<div class="mb-6 overflow-hidden rounded-lg aspect-video bg-surface-container">
+<img alt="Data Analytics System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated data visualization dashboard showing elegant D3.js charts and real-time analytical reporting. The design is airy and minimalist, with a primary focus on data clarity and vertical axis alignment. Subtle primary accents highlight key metrics, while the overall aesthetic is clean, professional, and data-driven." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCicCkg1sgfbo2AMLP_QWRpsJvbc-v6Jt-sm-2minFZrw9t6I_rhzaZ6hUe_k92EM5ydLC4-ReZs91QP-2Vzf4OFhw0_7Ae1cn_fuY5UzEXyXjUGu-vcSIMrB8y9BfAD3kHxo3NeDkqEIdNV-RdSbm5cpApjxnA932OKbqswDM-YMIdBEnMvYOugJQRdXyzU7oV4J0oNbUn6Je3dxsAr0FRdk9s0UMbWr5OeYydAn8X2ZJn9_JUZTCK4fhS2VQpnh1PCP0M0q9dfDwj"/>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">Python</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant">D3.js</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Data Analytics: Advanced Reporting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Interactive visualization engine for complex datasets, utilizing custom D3.js components and optimized Python backends for real-time processing.</p>
+<div class="flex gap-6 mt-auto">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors" href="../../CV.rar">
+                        View Demo <span class="material-symbols-outlined text-sm" data-icon="analytics">analytics</span>
+</a>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-tertiary transition-colors" href="../../CV.rar">
+                        Documentation <span class="material-symbols-outlined text-sm" data-icon="description">description</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Section -->
+<footer class="w-full py-element-gap px-margin-mobile flex flex-col items-center justify-center text-center gap-4 bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant dark:border-outline">
+<div class="font-headline-md text-headline-md text-on-surface">NoobVNstar.dev</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Email</a>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant opacity-80">© 2024 Thân Văn Hoàng Phương (NoobVNstar.dev).</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant font-medium">Đây là bài tập chỉ mang tính chất tham khảo</p>
+</div>
+</footer>
+</body></html>
