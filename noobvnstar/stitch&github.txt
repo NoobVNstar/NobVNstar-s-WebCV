@@ -1,2 +1,3 @@
-stitch:https://stitch.withgoogle.com/projects/12142261449907348465?pli=1
+Stitch:https://stitch.withgoogle.com/projects/12142261449907348465?pli=1
 GitHub:https://github.com/NoobVNstar/NobVNstar-s-WebCV
+Deploy:https://noobvnstar.github.io/NobVNstar-s-WebCV/noobvnstar/pages/kinh%20nghi%E1%BB%87m/kinhnghiemVN.html
